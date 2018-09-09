@@ -23,7 +23,7 @@ class Blog extends Component {
                     };
                 });
                 this.setState({ posts: updatedposts });
-                // console.log(response);
+
             });
     }
 
@@ -45,8 +45,8 @@ class Blog extends Component {
                     {posts}
                 </section>
                 <section>
-                    <FullPost 
-                    id={this.state.selectedPostId}/>
+                    <FullPost
+                        id={this.state.selectedPostId} />
                 </section>
                 <section>
                     <NewPost />
